@@ -11,7 +11,7 @@ import { CarbonCategories } from "./icons/CarbonCategories";
 
 const customTheme = {
   "root": {
-    "base": "h-full bg-dark_middle",
+    "base": " h-full bg-dark_middle",
     "collapsed": {
       "on": "w-16",
       "off": "w-64"
@@ -92,20 +92,11 @@ export default function SideBar() {
 
   return (
     <>
-      {/* <div className="flex min-h-[50vh] items-center justify-center">
-        <Button onClick={() => setIsOpen(true)}>Show navigation</Button>
-      </div>
-      <Drawer open={isOpen} onClose={handleClose} theme={customTheme}>
-        <Drawer.Header title="MENU" titleIcon={() => <></>} />
-        <Drawer.Items> */}
       <SidebarFB
         aria-label="Default sidebar example"
         theme={customTheme}
-        className="fixed left-0 top-0 border "
+        className=" "
       >
-        {/* <SidebarFB.Logo href="#" img="/public/Isologo.webp" imgAlt="Programador Proemedio logo">
-              Programador Proemedio
-            </SidebarFB.Logo> */}
         <a className="flex items-center gap-4 ">
           <div className="w-[50px] ">
             <img className="" src="/public/Isologo.webp" alt="Programador Proemedio logo" />
@@ -118,9 +109,6 @@ export default function SideBar() {
 
         <div className="flex flex-col justify-between py-2">
           <div>
-            {/* <form className="pb-3 md:hidden">
-                  <TextInput icon={HiSearch} type="search" placeholder="Search" required size={32} />
-                </form> */}
             <SidebarFB.Items className="text-left">
               <SidebarFB.ItemGroup>
                 <SidebarFB.Item href="/" icon={IconOutlineHi}>
@@ -148,8 +136,6 @@ export default function SideBar() {
           </div>
         </div>
       </SidebarFB>
-      {/* </Drawer.Items>
-      </Drawer> */}
     </>
   );
 }

@@ -14,6 +14,7 @@ export default {
       colors: {
         dark: "#161616",
         dark_middle: "#1c1c1c",
+        dark_btn: "#393939",
         white: "#f6f6f6",
         gray: "#858585"
       },
