@@ -7,6 +7,11 @@ import { IcBaselineAppsOutage } from "./icons/IcBaselineAppsOutage";
 import { IcBaselineAddReaction } from "./icons/IcBaselineAddReaction";
 import { CarbonApplicationWeb } from "./icons/CarbonApplicationWeb";
 import { CarbonCategories } from "./icons/CarbonCategories";
+import { StreamlineDiscord } from "./icons/StreamlineDiscord";
+import { FaSolidChalkboardTeacher } from "./icons/FaSolidChalkboardTeacher";
+import { IconoirYoutube } from "./icons/IconoirYoutube";
+import { MdiInstagram } from "./icons/MdiInstagram";
+import { useEffect, useState } from "react";
 
 
 const customTheme = {
@@ -89,6 +94,18 @@ const customTheme = {
 }
 
 export default function SideBar() {
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date().toLocaleTimeString());
+    }, 60000);
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(interval);
+  }, []);
+
+
 
   return (
     <>
@@ -97,17 +114,16 @@ export default function SideBar() {
         theme={customTheme}
         className=" "
       >
-        <a className="flex items-center gap-4 ">
+        <a className="flex items-center gap-4 py-4">
           <div className="w-[50px] ">
             <img className="" src="/public/Isologo.webp" alt="Programador Proemedio logo" />
           </div>
           <div>
             <h3>Programdor Promedio</h3>
-            <strong>Agencia | Academia</strong>
           </div>
         </a>
 
-        <div className="flex flex-col justify-between py-2">
+        <div className="flex flex-col justify-between py-4">
           <div>
             <SidebarFB.Items className="text-left">
               <SidebarFB.ItemGroup>
@@ -124,18 +140,44 @@ export default function SideBar() {
                   Nosotros
                 </SidebarFB.Item>
               </SidebarFB.ItemGroup>
-              <SidebarFB.ItemGroup>
-                <SidebarFB.Item href="https://github.com/themesberg/flowbite-react/" icon={CarbonApplicationWeb}>
+
+              <SidebarFB.ItemGroup >
+                <SidebarFB.Item href="https://forms.gle/CyYBK3Y4zgWtcVbEA" target="_blank" icon={CarbonApplicationWeb}>
                   Emulaciones Laborales
                 </SidebarFB.Item>
                 <SidebarFB.Item href="https://flowbite-react.com/" icon={CarbonCategories}>
                   Recursos
                 </SidebarFB.Item>
               </SidebarFB.ItemGroup>
+
+              <SidebarFB.ItemGroup >
+                <SidebarFB.Item href="https://discord.gg/BQHzVSSf3T" target="_blank" icon={StreamlineDiscord}>
+                  Discord
+                </SidebarFB.Item>
+                <SidebarFB.Item href="https://www.youtube.com/@programadorpromedio_" target="_blank" icon={IconoirYoutube}>
+                  YouTube
+                </SidebarFB.Item>
+                <SidebarFB.Item href="https://www.instagram.com/programadorpromedio_/" target="_blank" icon={MdiInstagram}>
+                  Instagram
+                </SidebarFB.Item>
+                <SidebarFB.Item href="https://calendar.app.google/C3wTReiV55eqCLLH8" target="_blank" icon={FaSolidChalkboardTeacher}>
+                  Mentoria
+                </SidebarFB.Item>
+
+              </SidebarFB.ItemGroup>
             </SidebarFB.Items>
           </div>
+
+          <a href="https://wa.me/5492213649961" target="_blank" className="py-4 px-2">
+            <strong className="flex items-center gap-2">En linea 🧑‍💻 <div className="blinking-circle"></div></strong>
+            <div>
+              {
+                new Date().getHours() >= 12 ? `${time} PM` : `${time} AM`
+              }
+            </div>
+          </a>
         </div>
-      </SidebarFB>
+      </SidebarFB >
     </>
   );
 }
