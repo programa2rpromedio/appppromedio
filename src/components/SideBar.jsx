@@ -12,6 +12,7 @@ import { FaSolidChalkboardTeacher } from "./icons/FaSolidChalkboardTeacher";
 import { IconoirYoutube } from "./icons/IconoirYoutube";
 import { MdiInstagram } from "./icons/MdiInstagram";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const customTheme = {
@@ -127,25 +128,37 @@ export default function SideBar() {
           <div>
             <SidebarFB.Items className="text-left">
               <SidebarFB.ItemGroup>
-                <SidebarFB.Item href="/" icon={IconOutlineHi}>
-                  Hola
-                </SidebarFB.Item>
-                <SidebarFB.Item href="/e-commerce/products" icon={IcOutlineFactory}>
-                  Proyectos
-                </SidebarFB.Item>
-                <SidebarFB.Item href="/users/list" icon={IcBaselineAppsOutage}>
-                  Servicios
-                </SidebarFB.Item>
-                <SidebarFB.Item href="/authentication/sign-in" icon={IcBaselineAddReaction}>
-                  Nosotros
-                </SidebarFB.Item>
+                <Link to='/'>
+                  <SidebarFB.Item icon={IconOutlineHi}>
+                    Hola
+                  </SidebarFB.Item>
+                </Link>
+
+                <Link to='/projects'>
+                  <SidebarFB.Item icon={IcOutlineFactory}>
+                    Proyectos
+                  </SidebarFB.Item>
+                </Link>
+
+                <Link to='/services'>
+                  <SidebarFB.Item icon={IcBaselineAppsOutage}>
+                    Servicios
+                  </SidebarFB.Item>
+                </Link>
+
+                <Link to='/about'>
+                  <SidebarFB.Item icon={IcBaselineAddReaction}>
+                    Nosotros
+                  </SidebarFB.Item>
+                </Link>
+
               </SidebarFB.ItemGroup>
 
               <SidebarFB.ItemGroup >
                 <SidebarFB.Item href="https://forms.gle/CyYBK3Y4zgWtcVbEA" target="_blank" icon={CarbonApplicationWeb}>
                   Emulaciones Laborales
                 </SidebarFB.Item>
-                <SidebarFB.Item href="https://flowbite-react.com/" icon={CarbonCategories}>
+                <SidebarFB.Item href="" icon={CarbonCategories}>
                   Recursos
                 </SidebarFB.Item>
               </SidebarFB.ItemGroup>
