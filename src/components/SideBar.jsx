@@ -158,7 +158,7 @@ export default function SideBar() {
                 <SidebarFB.Item href="https://forms.gle/CyYBK3Y4zgWtcVbEA" target="_blank" icon={CarbonApplicationWeb}>
                   Emulaciones Laborales
                 </SidebarFB.Item>
-                <SidebarFB.Item href="" icon={CarbonCategories}>
+                <SidebarFB.Item href="/resources" icon={CarbonCategories}>
                   Recursos
                 </SidebarFB.Item>
               </SidebarFB.ItemGroup>
