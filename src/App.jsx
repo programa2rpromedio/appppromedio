@@ -25,7 +25,7 @@ function App() {
         showAnimation ? <Loader /> : <div className='flex w-full'>
           <SideBar />
           <main className='w-full flex flex-col items-center'>
-            <div className='max-w-screen-lg '>
+            <div className='w-full md:max-w-screen-lg '>
               {/* <Header />
             <Projects />
             <Emulations />
