@@ -9,7 +9,7 @@ import { StreamlineDiscord } from "./icons/StreamlineDiscord";
 import { FaSolidChalkboardTeacher } from "./icons/FaSolidChalkboardTeacher";
 import { IconoirYoutube } from "./icons/IconoirYoutube";
 import { MdiInstagram } from "./icons/MdiInstagram";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function NavbarDesktop() {
@@ -29,29 +29,45 @@ export default function NavbarDesktop() {
       <div>
         <SidebarFB.Items className="text-left" >
           <SidebarFB.ItemGroup>
-            <Link to='/'>
+            <NavLink to='/'
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
               <SidebarFB.Item icon={IconOutlineHi}>
                 Hola
               </SidebarFB.Item>
-            </Link>
+            </NavLink >
 
-            <Link to='/projects'>
+            <NavLink to='/projects'
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
               <SidebarFB.Item icon={IcOutlineFactory}>
                 Proyectos
               </SidebarFB.Item>
-            </Link>
+            </NavLink >
 
-            <Link to='/services'>
+            <NavLink to='/services'
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
               <SidebarFB.Item icon={IcBaselineAppsOutage}>
                 Servicios
               </SidebarFB.Item>
-            </Link>
+            </NavLink >
 
-            <Link to='/about'>
+            <NavLink to='/about'
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
               <SidebarFB.Item icon={IcBaselineAddReaction}>
                 Nosotros
               </SidebarFB.Item>
-            </Link>
+            </NavLink >
 
           </SidebarFB.ItemGroup>
 
@@ -59,9 +75,15 @@ export default function NavbarDesktop() {
             <SidebarFB.Item href="https://forms.gle/CyYBK3Y4zgWtcVbEA" target="_blank" icon={CarbonApplicationWeb}>
               Emulaciones Laborales
             </SidebarFB.Item>
-            <SidebarFB.Item href="/resources" icon={CarbonCategories}>
-              Recursos
-            </SidebarFB.Item>
+            <NavLink to='/about'
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
+              <SidebarFB.Item href="/resources" icon={CarbonCategories}>
+                Recursos
+              </SidebarFB.Item>
+            </NavLink >
           </SidebarFB.ItemGroup>
 
           <SidebarFB.ItemGroup >
@@ -83,7 +105,7 @@ export default function NavbarDesktop() {
       </div>
 
       <a href="https://wa.me/5492213649961" target="_blank" className="py-4 px-2">
-        <strong className="flex items-center gap-2">En linea 🧑‍💻 <div className="blinking-circle"></div></strong>
+        <strong className="flex items-center gap-2">En linea 🧑‍💻 <div className="bNavLink ing-circle"></div></strong>
         <div>
           {
             new Date().getHours() >= 12 ? `${time} PM` : `${time} AM`

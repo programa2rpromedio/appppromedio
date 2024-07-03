@@ -31,3 +31,12 @@
     opacity: 0;
   }
 }
+
+
+a:hover {
+  color: #ffff1a
+}
+
+.active{
+  color: #6cce54
+}

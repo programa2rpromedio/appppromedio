@@ -92,8 +92,20 @@ export default function SideBar() {
 
   const toggleNav = () => {
     setExpandNav(!expandNav);
-
   }
+
+
+  // const activeHover = (e) => {
+  //   console.dir(e.srcElement.parentElement.nodeName);
+  //   const anchor = e.srcElement.parentElement
+  //   if (anchor.nodeName === 'A') {
+  //     anchor.classList.add('activeHover')
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   document.addEventListener('hover', activeHover)
+  // }, [])
 
 
   return (
@@ -102,7 +114,7 @@ export default function SideBar() {
         <SidebarFB
           aria-label="Default sidebar example"
           theme={customTheme}
-          className={expandNav ? null : 'w-16'}
+          className={`relative ${expandNav ? null : 'w-16'}`}
         >
           <a className="flex items-center gap-4 py-4">
             <div className="w-[50px] ">
@@ -124,8 +136,8 @@ export default function SideBar() {
               <NavbarMovile />
           }
 
-          <div className="flex justify-center items-center">
-            <button onClick={toggleNav}>X</button>
+          <div className="flex justify-center items-center absolute top-10 -right-2">
+            <button onClick={toggleNav} >{expandNav ? <span className="icon-[fontisto--close] w-[15px] h-[15px]"></span> : <span className="icon-[mdi--arrow-right]"></span>}</button>
           </div>
         </SidebarFB >
       }

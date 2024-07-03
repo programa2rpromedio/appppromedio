@@ -9,7 +9,7 @@ import { StreamlineDiscord } from "./icons/StreamlineDiscord";
 import { FaSolidChalkboardTeacher } from "./icons/FaSolidChalkboardTeacher";
 import { IconoirYoutube } from "./icons/IconoirYoutube";
 import { MdiInstagram } from "./icons/MdiInstagram";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function NavbarMovile() {
   return (
@@ -17,47 +17,67 @@ export default function NavbarMovile() {
       <div>
         <SidebarFB.Items className="text-left" >
           <SidebarFB.ItemGroup className="flex flex-col gap-2">
-            <Link to='/' >
+            <NavLink to='/'
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
               <IconOutlineHi className="w-[30px] h-[30px]" />
-            </Link>
-            <Link to='/projects'>
+            </NavLink >
+            <NavLink to='/projects'
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
               <IcOutlineFactory className="w-[30px] h-[30px]" />
-            </Link>
+            </NavLink >
 
-            <Link to='/services'>
+            <NavLink to='/services'
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
               <IcBaselineAppsOutage className="w-[30px] h-[30px]" />
-            </Link>
+            </NavLink >
 
-            <Link to='/about'>
+            <NavLink to='/about'
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
               <IcBaselineAddReaction className="w-[30px] h-[30px]" />
-            </Link>
+            </NavLink >
 
           </SidebarFB.ItemGroup>
 
           <SidebarFB.ItemGroup className="flex flex-col gap-2">
 
-            <Link to="https://forms.gle/CyYBK3Y4zgWtcVbEA" target="_blank" >
+            <NavLink to="https://forms.gle/CyYBK3Y4zgWtcVbEA" target="_blank" >
               <CarbonApplicationWeb className="w-[30px] h-[30px]" />
-            </Link>
-            <Link to="/resources" >
+            </NavLink >
+            <NavLink to="/resources"
+              className={({ isActive }) =>
+                isActive ? "active" : ""
+              }
+            >
               <CarbonCategories className="w-[30px] h-[30px]" />
-            </Link>
+            </NavLink >
           </SidebarFB.ItemGroup>
 
           <SidebarFB.ItemGroup className="flex flex-col gap-2">
 
-            <Link to="https://discord.gg/BQHzVSSf3T" target="_blank" >
+            <NavLink to="https://discord.gg/BQHzVSSf3T" target="_blank" >
               <StreamlineDiscord className="w-[30px] h-[30px]" />
-            </Link>
-            <Link to="https://www.youtube.com/@programadorpromedio_" target="_blank">
+            </NavLink >
+            <NavLink to="https://www.youtube.com/@programadorpromedio_" target="_blank">
               <IconoirYoutube className="w-[30px] h-[30px]" />
-            </Link>
-            <Link to="https://www.instagram.com/programadorpromedio_/" target="_blank" >
+            </NavLink >
+            <NavLink to="https://www.instagram.com/programadorpromedio_/" target="_blank" >
               <MdiInstagram className="w-[30px] h-[30px]" />
-            </Link>
-            <Link to="https://calendar.app.google/C3wTReiV55eqCLLH8" target="_blank" >
+            </NavLink >
+            <NavLink to="https://calendar.app.google/C3wTReiV55eqCLLH8" target="_blank" >
               <FaSolidChalkboardTeacher className="w-[30px] h-[30px]" />
-            </Link>
+            </NavLink >
           </SidebarFB.ItemGroup>
 
         </SidebarFB.Items>
