@@ -3,35 +3,35 @@ export const projects = [
     id: 1,
     title: "Colegio | Instituto Santa Rosa",
     description: "Sitio Web Institucional",
-    image: "/public/santarosaV2.png",
+    image: "./public/santarosaV2.png",
     link: "https://santarosachivilcoy.com/"
   },
   {
     id: 2,
     title: "Pablo Galfré",
     description: "Porfolio personal",
-    image: "/public/galfreV2.png",
+    image: "./public/galfreV2.png",
     link: "https://pablogalfre.com/"
   },
   {
     id: 3,
     title: "Turnero - Museo Historico Nacional",
     description: "Software a medida",
-    image: "/public/museo.png",
+    image: "./public/museo.png",
     link: ""
   },
   {
     id: 4,
     title: "Atlanta Audiovisual",
     description: "Porfolio empresarial",
-    image: "/public/atlantaV2.png",
+    image: "./public/atlantaV2.png",
     link: "https://atlantaaudiovisual.com.ar/"
   },
   {
     id: 5,
     title: "Sistema de gestion de personal",
     description: "Software a medida",
-    image: "/public/montelectro.png",
+    image: "./public/montelectro.png",
     link: ""
   },
 ]
