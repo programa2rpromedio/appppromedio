@@ -51,7 +51,7 @@ export function Footer() {
           <div>
             <a className="flex items-center gap-4 ">
               <div className="w-[50px] ">
-                <img className="" src="./public/Isologo.webp" alt="Programador Proemedio logo" />
+                <img className="" src="/Isologo.webp" alt="Programador Proemedio logo" />
               </div>
               <div>
                 <h3>Programdor Promedio</h3>

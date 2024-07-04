@@ -118,7 +118,7 @@ export default function SideBar() {
         >
           <a className="flex items-center gap-4 py-4">
             <div className="w-[50px] ">
-              <img className="w-full" src="./public/Isologo.webp" alt="Programador Proemedio logo" />
+              <img className="w-full" src="/Isologo.webp" alt="Programador Proemedio logo" />
             </div>
             {
               expandNav ?
@@ -149,7 +149,7 @@ export default function SideBar() {
         >
           <a className="flex items-center gap-4 py-4">
             <div className="w-[50px] ">
-              <img className="w-full" src="./public/Isologo.webp" alt="Programador Proemedio logo" />
+              <img className="w-full" src="/Isologo.webp" alt="Programador Proemedio logo" />
             </div>
           </a>
 
