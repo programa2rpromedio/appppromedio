@@ -36,10 +36,10 @@ export default function Resources() {
   }, [])
 
   return (
-    <section className='p-12 min-h-[100vh]'>
+    <section className='p-8 2xl:p-12 min-h-[100vh]'>
       <div className="text-left">
-        <h1 className='text-white text-5xl font-pixel_digivolve '>Recursos</h1>
-        <h2 className="mt-4 text-3xl text-white">Aprende las tecnologias mas demandadas en la industria con nuestro contenido <strong className="text-gray">gratuito.</strong></h2>
+        <h2 className='text-white text-5xl font-pixel_digivolve '>Recursos</h2>
+        <h1 className="mt-4 text-3xl text-white">Aprende las tecnologias mas demandadas en la industria con nuestro contenido <strong className="text-gray">gratuito.</strong></h1>
       </div>
 
 

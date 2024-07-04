@@ -9,7 +9,7 @@ export default function Home() {
       <Projects />
       <Emulations />
 
-      <section className="p-12 flex flex-wrap justify-between gap-y-3">
+      <section className="p-8 2xl:p-12 flex flex-col items-center md:flex-row flex-wrap justify-between gap-y-3">
         <CardInfo />
         <CardInfo />
       </section>

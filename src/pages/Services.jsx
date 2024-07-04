@@ -2,7 +2,7 @@ import CardServices from "../components/CardServices"
 import { services } from "../data"
 export default function Services() {
   return (
-    <section className='p-12'>
+    <section className='p-8 2xl:p-12'>
       <div className="text-left">
         <h1 className='text-white text-5xl font-pixel_digivolve '>Servicios</h1>
         <h2 className="mt-4 text-3xl text-white">Combinando tecnología y funcionalidad, nuestros servicios transforman ideas en <strong className="text-gray">productos digitales.</strong></h2>

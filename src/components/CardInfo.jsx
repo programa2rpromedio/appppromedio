@@ -2,7 +2,7 @@ import { CarbonCategories } from "./icons/CarbonCategories";
 
 export default function CardInfo() {
   return (
-    <div className=" flex flex-col items-start justify-between w-[400px] h-[235px] p-6 bg-dark_middle rounded-lg overflow-hidden">
+    <div className=" flex flex-col items-start justify-between w-[300px] md:w-[400px] h-[235px] p-6 bg-dark_middle rounded-lg overflow-hidden">
       <div className="p-3 w-[40px] flex justify-center items-center bg-dark_btn rounded-full">
         <CarbonCategories className='' />
       </div>
