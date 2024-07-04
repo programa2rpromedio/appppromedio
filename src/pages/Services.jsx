@@ -8,7 +8,7 @@ export default function Services() {
         <h2 className="mt-4 text-3xl text-white">Combinando tecnología y funcionalidad, nuestros servicios transforman ideas en <strong className="text-gray">productos digitales.</strong></h2>
       </div>
       <div className="text-left mt-4 flex gap-4">
-        <a href="https://calendly.com/programadorpromedio/30min" target="_blank" className="text-white bg-dark_btn border border-gray py-2 px-6 rounded-lg hover:opacity-50 cursor-pointer flex items-center gap-2"> <span className="icon-[bx--calendar]"></span> Consultoria gratis</a>
+        <a href="https://calendly.com/programadorpromedio/30min" target="_blank" className="text-white bg-dark_btn border border-gray py-2 px-6 rounded-lg hover:opacity-50 cursor-pointer flex items-center gap-2"> <span className="icon-[bx--calendar]"></span> Consultoría gratis</a>
       </div>
 
       <section className=' mt-16 flex flex-wrap justify-between gap-y-4'>

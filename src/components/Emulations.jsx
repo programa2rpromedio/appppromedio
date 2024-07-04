@@ -34,12 +34,12 @@ export default function Emulations() {
             <div className="p-4 bg-dark_btn rounded-lg">
               <span className="icon-[icon-park-outline--workbench]"></span>
             </div>
-            <h4 className="">Suma un proyecto a tu porfolio</h4>
+            <h4 className="">Añade un proyecto a tu portafolio</h4>
           </div>
         </div>
 
         <a href="https://forms.gle/CyYBK3Y4zgWtcVbEA" target="_blank" className="flex items-center justify-between absolute bottom-0 left-0 p-6 w-full bg-dark_middle hover:opacity-50">
-          <h2 className="text-left font-pixel_digivolve text-xl">Inscribite</h2>
+          <h2 className="text-left font-pixel_digivolve text-xl">¡Inscribite!</h2>
           <span className="icon-[mdi--arrow-right]"></span>
         </a>
       </div>

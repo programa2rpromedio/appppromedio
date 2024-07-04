@@ -9,7 +9,7 @@ export const projects = [
   {
     id: 2,
     title: "Pablo Galfré",
-    description: "Porfolio personal",
+    description: "Portafolio personal",
     image: "/galfreV2.png",
     link: "https://pablogalfre.com/"
   },
@@ -23,13 +23,13 @@ export const projects = [
   {
     id: 4,
     title: "Atlanta Audiovisual",
-    description: "Porfolio empresarial",
+    description: "Portafolio empresarial",
     image: "/atlantaV2.png",
     link: "https://atlantaaudiovisual.com.ar/"
   },
   {
     id: 5,
-    title: "Sistema de gestion de personal",
+    title: "Sistema de gestión de personal",
     description: "Software a medida",
     image: "/montelectro.png",
     link: ""
