@@ -105,7 +105,7 @@ export default function NavbarDesktop() {
       </div>
 
       <a href="https://wa.me/5492213649961" target="_blank" className="py-4 px-2">
-        <strong className="flex items-center gap-2">En linea 🧑‍💻 <div className="bNavLink ing-circle"></div></strong>
+        <strong className="flex items-center gap-2">En linea 🧑‍💻 <div className="blinking-circle"></div></strong>
         <div>
           {
             new Date().getHours() >= 12 ? `${time} PM` : `${time} AM`

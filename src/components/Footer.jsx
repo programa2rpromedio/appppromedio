@@ -3,7 +3,7 @@ import { MdiInstagram } from "./icons/MdiInstagram";
 import { MdiWhatsapp } from "./icons/MdiWhatsapp";
 import { IconoirYoutube } from "./icons/IconoirYoutube";
 import { StreamlineDiscord } from "./icons/StreamlineDiscord";
-
+import { Link } from "react-router-dom";
 
 const customTheme = {
   "root": {
@@ -49,22 +49,21 @@ export function Footer() {
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
 
           <div>
-            <a className="flex items-center gap-4 ">
+            <Link to='/' className="flex items-center gap-4 ">
               <div className="w-[50px] ">
                 <img className="" src="/Isologo.webp" alt="Programador Proemedio logo" />
               </div>
               <div>
                 <h3>Programdor Promedio</h3>
-                <strong>Agencia | Academia</strong>
               </div>
-            </a>
+            </Link>
           </div>
 
           <FooterFB.LinkGroup>
             <FooterFB.Link href="#">About</FooterFB.Link>
             <FooterFB.Link href="#">Privacy Policy</FooterFB.Link>
             <FooterFB.Link href="#">Licensing</FooterFB.Link>
-            <FooterFB.Link href="#">Contact</FooterFB.Link>
+            <FooterFB.Link href="https://wa.me/5492213649961" target="_blank">Contact</FooterFB.Link>
           </FooterFB.LinkGroup>
 
         </div>

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useMediaQuery } from 'react-responsive';
 import NavbarMovile from './NavbarMovile'
 import NavbarDesktop from './NavbarDesktop'
+import { Link } from "react-router-dom";
 
 const customTheme = {
   "root": {
@@ -95,19 +96,6 @@ export default function SideBar() {
   }
 
 
-  // const activeHover = (e) => {
-  //   console.dir(e.srcElement.parentElement.nodeName);
-  //   const anchor = e.srcElement.parentElement
-  //   if (anchor.nodeName === 'A') {
-  //     anchor.classList.add('activeHover')
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   document.addEventListener('hover', activeHover)
-  // }, [])
-
-
   return (
     <>
       {isDesktop &&
@@ -116,7 +104,7 @@ export default function SideBar() {
           theme={customTheme}
           className={`relative ${expandNav ? null : 'w-16'}`}
         >
-          <a className="flex items-center gap-4 py-4">
+          <Link to='/' className="flex items-center gap-4 py-4">
             <div className="w-[50px] ">
               <img className="w-full" src="/Isologo.webp" alt="Programador Proemedio logo" />
             </div>
@@ -128,7 +116,7 @@ export default function SideBar() {
                 :
                 null
             }
-          </a>
+          </Link>
           {
             expandNav ?
               <NavbarDesktop />
