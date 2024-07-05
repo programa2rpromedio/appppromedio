@@ -75,12 +75,12 @@ export default function NavbarDesktop() {
             <SidebarFB.Item href="https://forms.gle/CyYBK3Y4zgWtcVbEA" target="_blank" icon={CarbonApplicationWeb}>
               Emulaciones Laborales
             </SidebarFB.Item>
-            <NavLink to='/about'
+            <NavLink to="/resources"
               className={({ isActive }) =>
                 isActive ? "active" : ""
               }
             >
-              <SidebarFB.Item href="/resources" icon={CarbonCategories}>
+              <SidebarFB.Item icon={CarbonCategories}>
                 Recursos
               </SidebarFB.Item>
             </NavLink >
